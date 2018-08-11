@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext');
+
+$main-font-color: #696969;
+$main-font-family: 'Lato', sans-serif;
+$tablet: "screen and (min-width: 640px)";
+$desktop: "screen and (min-width: 1024px)";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font-family;
+}
