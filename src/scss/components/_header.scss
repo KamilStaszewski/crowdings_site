@@ -16,61 +16,59 @@
     }
 }
 
-.header-sticky {
-    position: absolute;
-    background: none;
-    transition: none;
-    box-shadow: none;
-    @media #{$tablet} {
-        background: darken(mix($color1, $color2), 5%);
-        height: 80px;
-        box-shadow: 0 1px 3px rgba(black, 0.4);
-    }
-}
+// .header-sticky {
+//     position: absolute;
+//     background: none;
+//     transition: none;
+//     box-shadow: none;
+//     @media #{$tablet} {
+//         background: darken(mix($color1, $color2), 5%);
+//         height: 80px;
+//         box-shadow: 0 1px 3px rgba(black, 0.4);
+//     }
+// }
 
 .header .container {
     height: 100%;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
     padding: 30px 0;
     @media #{$tablet} {
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
+        flex-direction: row;
     }
 }
 
 .header__logo {
-    display: none;
-
-    @media #{$tablet} {
-        display: block;
-    }
+    display: block;
 }
 
 .header__logo-image {
-    height: 75px;
-    width: 75px;
+    height: 175px;
+    width: 175px;
     display: block;
-
     @media #{$tablet} {
         height: 200px;
         width: 200px;
     }
-    
 }
 
 .header__navlist {
-    display: none;
-    @media #{$tablet} {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;   
-    }
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
 }
 
 .header__navitem {
+    font-size: 12px;
+    padding: 2px;
     @media #{$tablet} {
+        font-size: 16px;
         padding: 10px;
     }
 }
@@ -100,179 +98,5 @@
     &:hover:before {
         right: 0;
         left: 0;
-    }
-}
-
-/* mobile menu - do innego pliku potem */
-/* =Variables + Placeholder
------------------------------------------------------ */
-
-$toggle-stripe-2: 4px;
-$toggle-stripe-3: 8px;
-$navbar-color: #fff;
-$transition: .2s ease-in-out;
-$menu-width: 240px;
-$menu-shadow: 4px 0 16px -4px rgba(0, 0, 0, .2);
-%transition {
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    transition: $transition;
-}
-
-/* =Basic styles
------------------------------------------------------ */
-
-body {
-    background: #eee;
-    font: 16px/1.4 "Roboto", Arial, sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* =Navbar
------------------------------------------------------ */
-
-.site-navbar {
-    font-size: 20px;
-    height: 160px;
-    left: 20px;
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    z-index: 11;
-    @media #{$tablet} {
-        display: none;
-    }
-}
-
-/* =Menu
------------------------------------------------------ */
-
-.site-menu {
-    @extend %transition;
-    background: #fff;
-    bottom: 0;
-    font-size: 14px;
-    height: 100%;
-    left: -$menu-width;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    width: $menu-width;
-}
-
-.site-menu-item {
-    >a {
-        color: #ccc;
-        display: block;
-        margin-bottom: 1px;
-        padding: 10px 18px;
-        &:hover,
-        &:active {
-            color: #333;
-        }
-    }
-}
-
-.site-menu-item.current>a {
-    color: #333;
-}
-
-/* =Overlay toggle
------------------------------------------------------ */
-
-.toggle-overlay-checkbox {
-    display: none;
-}
-
-.toggle-overlay-label {
-    @extend %transition;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none; // Important to prevent unwanted triggering
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: -1;
-}
-
-/* Display menu overlay */
-
-.toggle-menu-checkbox:checked~.toggle-overlay-label {
-    background: rgba(0, 0, 0, 0.1);
-    opacity: 1;
-    pointer-events: auto;
-    z-index: 1;
-}
-
-/* =Menu toggle
------------------------------------------------------ */
-
-.toggle-menu-checkbox,
-.toggle-menu-label {
-    display: none;
-}
-
-.toggle-menu-checkbox:checked~.site-menu {
-    left: 0;
-    z-index: 2;
-    box-shadow: $menu-shadow;
-    -moz-box-shadow: $menu-shadow;
-    -webkit-box-shadow: $menu-shadow;
-}
-
-.toggle-overlay-checkbox:checked~.site-menu {
-    left: -$menu-width;
-}
-
-.toggle-menu-label {
-    cursor: pointer;
-    display: block;
-    padding: 0 0 0 20px;
-    position: absolute;
-    left: 20px;
-    top: 24px;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    &:before {
-        background: $color1;
-        content: "";
-        height: 2px;
-        position: absolute;
-        left: 0;
-        top: 1px;
-        width: 1em;
-        box-shadow: 0 $toggle-stripe-2 0 0 $color1, 0 $toggle-stripe-3 0 0 $color1;
-        -moz-box-shadow: 0 $toggle-stripe-2 0 0 $color1, 0 $toggle-stripe-3 0 0 $color1;
-        -webkit-box-shadow: 0 $toggle-stripe-2 0 0 $color1, 0 $toggle-stripe-3 0 0 $color1;
-    }
-    &:after {
-        color: $color1;
-        content: "";
-        display: inline-block;
-        line-height: 1;
-        margin-top: -9px;
-        padding-right: 1.4em;
-        text-align: center;
-        text-transform: uppercase;
-        vertical-align: middle;
-        border-radius: 2px 2px 2px 2px;
-    }
-}
-
-.toggle-menu-checkbox:checked~.toggle-menu-label {
-    &:after {
-        content: "";
-        color: #ccc !important;
-    }
-    &:before {
-        background: #ccc;
-        box-shadow: 0 $toggle-stripe-2 0 0 #ccc, 0 $toggle-stripe-3 0 0 #ccc;
     }
 }
