@@ -1,17 +1,17 @@
 .header {
-    height: 200px;
+    height: 100px;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 1000;
-    position: absolute;
+    position: fixed;
     background: none;
     transition: none;
     box-shadow: none;
     @media #{$tablet} {
-        height: 100px;
+        height: 70px;
         width: 100%;
-        position: fixed;
+        position: initial;
         transition: 0.5s all;
     }
 }
@@ -34,7 +34,6 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    padding: 30px 0;
     @media #{$tablet} {
         justify-content: space-evenly;
         align-items: center;
