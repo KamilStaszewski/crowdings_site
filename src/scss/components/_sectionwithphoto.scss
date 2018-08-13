@@ -1,3 +1,17 @@
 .sectionwithphoto {
     height: 100vh;  
 }
+
+.sectionwithphoto .container {
+    display: flex;
+}
+
+.sectionwithphoto__text {
+    flex-basis: 50%;
+}
+
+.sectionwithphoto__photo {
+    padding: 10px;
+    flex-basis: 50%;
+}
+
