@@ -3,11 +3,13 @@
 }
 
 .sectionwithphoto {
-    height: 100vh;  
+    height: 100vh;
 }
 
 .sectionwithphoto .container {
     display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .sectionwithphoto__text {
@@ -25,14 +27,32 @@
 }
 
 .sectionwithphoto__text p {
-    font-size: 18px;
     font-weight: lighter;
     padding: 10px;
+    font-size: 10px;
+    @media #{$tablet} {
+        font-size: 18px;
+    }
 }
 
 .sectionwithphoto__photo {
     flex-basis: 50%;
 }
 
+.sectionwithphoto__img {
+    height: 100%;
+    width: 100%;    
+    @media #{$tablet} {
+        height: initial;
+    }
+}
 
-
+.parallax {
+    height: 100vh;
+    background-color: #fff;
+    background-image: url(https://images.pexels.com/photos/1322728/pexels-photo-1322728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
