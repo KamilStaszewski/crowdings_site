@@ -29,30 +29,3 @@
     font-weight: lighter;
 }
 
-.gallery {
-    height: 100vh;
-}
-
-.gallery .container {
-    height: 100%;
-}
-
-.gallery__container {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.gallery__item {
-    flex-basis: 33.333%;
-    height: 300px;
-    padding: 10px
-}
-
-.gallery__img {
-    width: 100%;
-}
-
-.gallery__title {
-    align-self: flex-end;
-}
