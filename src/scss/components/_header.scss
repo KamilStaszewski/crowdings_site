@@ -91,7 +91,7 @@
         letter-spacing: 1px;
         font-weight: 700;
     }
-    .hero-svg {
+    .hero__svg {
         background-image: url("/images/illustration-hero.svg");
         height: 50%;
         width: 200px;
@@ -114,23 +114,3 @@
 
 
 
-.container2 {
-    padding: 130px;
-    max-width: 1350px;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin: 0 auto;
-    background-image: #fff;
-    color: #000;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    
-    h2 {
-        text-align: center;
-        color: $accent2;
-        font-weight: 700;
-        font-size: 30px;
-    }
-    
-    
-}

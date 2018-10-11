@@ -1,0 +1,42 @@
+.container2 {
+    padding: 130px;
+    max-width: 1350px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0 auto;
+    background-image: #fff;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    
+    .product {
+        height: 60%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        text-align: center;
+        color: $accent2;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .product__svgcontainer {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 6em;
+    }
+    
+    .product__svg {
+        background-image: url("/images/illustration-features.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 70%;
+        text-align: center;
+    }   
+}
