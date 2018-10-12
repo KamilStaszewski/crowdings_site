@@ -3,7 +3,7 @@
     padding-left: 2px;
     padding-right: 2px;
     margin: 0 auto;
-    background-image: linear-gradient($secondaryColor, $primaryColor);
+    background: linear-gradient(to right, $secondaryColor, $primaryColor);
     color: #fff;
     font-family: 'Raleway', sans-serif;
     position: relative;
