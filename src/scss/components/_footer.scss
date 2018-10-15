@@ -1,0 +1,41 @@
+.container3 {
+    clip-path: polygon(0 0, 100% 17%, 100% 100%, 0% 100%);
+    background: $secondaryColor;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+    footer {
+        padding-top: 100px;
+        .footer__logo {
+            display: flex;
+            flex-direction: column;
+            .footer__mainlogo {
+                padding: 10px;
+            }
+        }
+
+        .footer__phone {
+            display: flex;
+            align-items: center;
+            .footer__phoneicon {
+                padding: 10px;
+            }
+        }
+
+        .footer__email {
+            display: flex;
+            align-items: center;
+            .footer__emailicon {
+                padding: 10px;
+            }
+        }
+        
+        .footer__updates {
+            padding: 10px;
+        }
+
+    }
+}
