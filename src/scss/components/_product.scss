@@ -102,30 +102,3 @@
 
 
 
-.container3 {
-    clip-path: polygon(0 0, 100% 17%, 100% 100%, 0% 100%);
-    background: $secondaryColor;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-    color: #fff;
-
-    footer {
-        padding-top: 100px;
-        .footer__icons {
-            display: flex;
-            flex-direction: column;
-            .footer__mainlogo {
-                padding: 10px;
-            }
-            .footer__emailicon {                
-                padding: 10px;
-                padding-top: 20px;
-            }
-
-            .footer__phoneicon {
-                padding: 5px 10px;    
-            }
-        }
-    }
-}
