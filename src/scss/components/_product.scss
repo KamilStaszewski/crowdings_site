@@ -28,7 +28,8 @@
             height: 300px;
             width: 100%;
             display: flex;
-            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             padding-top: 6em;
         }
         
@@ -36,8 +37,8 @@
             background-image: url("/images/illustration-features.svg");
             background-size: contain;
             background-repeat: no-repeat;
-            height: 100%;
-            width: 70%;
+            height: 250px;
+            width: 250px;
             text-align: center;
         } 
 
