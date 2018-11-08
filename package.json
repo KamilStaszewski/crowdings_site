@@ -1,34 +1,31 @@
 {
-  "name": "projekt",
+  "name": "express-gulp-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Express boilerplate with Gulp, nodemon and BrowserSync",
+  "main": "app.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "prod": "webpack --mode production"
+    "start": "node app.js",
+    "serve": "gulp"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Jesper Orb",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
-    "ansi-colors": "^1.1.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "browser-sync": "^2.23.6",
+    "autoprefixer": "^6.7.7",
+    "babel-preset-env": "^1.2.2",
+    "browser-sync": "^2.18.8",
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-csso": "^3.0.1",
-    "gulp-plumber": "^1.2.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.2.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-util": "^3.0.8",
-    "gulp-wait": "0.0.2",
-    "gulp-watch": "^4.3.11",
-    "node-notifier": "^5.2.1",
-    "webpack": "^4.2.0",
-    "webpack-cli": "^2.0.13"
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "pug": "^2.0.0-beta11"
   }
 }
