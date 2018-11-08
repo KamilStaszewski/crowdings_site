@@ -1,0 +1,25 @@
+.container {
+  @include container;
+
+  .main-header__nav {
+    @include flex;
+    justify-content: space-between;
+  
+    .main-header__item-list {
+      @include flex;
+      list-style-type: none;
+
+      .main-header__item {
+        padding: 0 0.5rem;
+
+        a {
+          text-decoration: none;
+          color: #002940;
+        }
+      }
+
+    }
+  
+  }
+}
+

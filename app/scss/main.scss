@@ -1,6 +1,3 @@
 @import "normalize";
 @import "mixins";
-
-h1 {
-  color: red;
-}
+@import "./components/_header.scss";
