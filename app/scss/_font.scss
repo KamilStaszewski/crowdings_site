@@ -1,17 +1,5 @@
-@font-face {
-    font-family: 'Source Sans Pro Extra Light';
-    src: url('../fonts/sourcesanspro-extralight.woff2') format('woff2'),
-         url('../fonts/sourcesanspro-extralight.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    src: url('../fonts/sourcesanspro-regular.woff2') format('woff2'),
-         url('../fonts/sourcesanspro-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
 }

@@ -1,3 +1,4 @@
-@import "normalize";
-@import "mixins";
+@import "_normalize";
+@import "_mixins";
+@import "_font";
 @import "./components/_header.scss";

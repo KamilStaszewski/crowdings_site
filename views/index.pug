@@ -5,19 +5,28 @@ html(lang="en")
 		title #{title}
 		link(rel="stylesheet" type="text/css" href="dist/css/main.min.css")
 		link(rel="stylesheet" href="dist/css/font.css")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		link(rel="icon" href="dist/favicon.png")
 	body
-	.container
-		header.main-header
-			nav.main-header__nav
-				h2.main-header__logo Your logo
-				ul.main-header__item-list
-					li.main-header__item
-						a(href="/",) Home
-					li.main-header__item
-						a(href="/about-us") About us
-					li.main-header__item
-						a(href="/work") Work
-					li.main-header__item
-						a(href="/contact-us") Contact us
+header.main
+	a#main-menu-toggle.menu-toggle(href='#main-menu', role='button', aria-expanded='false', aria-controls='main-menu', aria-label='Open main menu')
+		span.sr-only Open main menu
+		span.fa.fa-bars(aria-hidden='true')
+	h1.logo hamburgers
+	nav#main-menu.main-menu(role='navigation', aria-expanded='false', aria-label='Main menu')
+		a#main-menu-close.menu-close(href='#main-menu-toggle', role='button', aria-expanded='false', aria-controls='main-menu', aria-label='Close main menu')
+			span.sr-only Close main menu
+			span.fas.fa-times(aria-hidden='true')
+		ul
+			li
+				a(href='#') Products
+			li
+				a(href='#') About
+			li
+				a(href='#') Contact
+	a.backdrop(href='#main-menu-toggle', tabindex='-1', aria-hidden='true', hidden='')
+
+
+
+
