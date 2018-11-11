@@ -13,7 +13,7 @@ app.set('view engine', 'pug');
 app.use('/dist', express.static(path.join(__dirname, 'dist')));
 
 app.get('/', (req,res) => {
-  res.render('index', {title: "Title"});
+  res.render('index', {title: "Crypto-learning site for beginners"});
 })
 
 app.listen(port, function(){

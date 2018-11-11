@@ -1,6 +1,4 @@
-@import "normalize";
-@import "mixins";
-
-h1 {
-  color: red;
-}
+@import "_normalize";
+@import "_mixins";
+@import "_font";
+@import "./components/_header.scss";
