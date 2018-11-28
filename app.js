@@ -1,9 +1,6 @@
 const express = require('express');
-const pug = require('pug');
 const path = require('path');
 
-const helpers = require('./utilities/helpers.js');
-const defaults = require('./utilities/defaults.js');
 const config = require('./config/config.js');
 
 const app = express();

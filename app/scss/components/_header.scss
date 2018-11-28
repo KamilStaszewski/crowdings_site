@@ -14,6 +14,7 @@
 .main {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .menu-toggle {
@@ -41,7 +42,7 @@
   overflow-y: hidden;
   overflow-x: visible;
   transition: left 0.3s ease,
-              box-shadow 0.3s ease;
+  box-shadow 0.3s ease;
   z-index: 999;
 }
 
@@ -184,11 +185,20 @@ article h2 {
 
   .main {
     margin: 0 auto;
-    padding-left: 150px;
-    padding-right: 150px;
-    a {
+    max-width: 720px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    .main-menu__item {
       font-size: 25px;
       font-weight: 700;
+      color: #ccc;
+      text-decoration: none;
+      &:hover {
+        color: initial;
+        text-decoration: none;
+      }
     }
   }
 
@@ -227,5 +237,20 @@ article h2 {
   .main-menu a:focus {
     background: none; /* Remove background from off-canvas styling */
     color: #c00;
+  }
+}
+
+
+@media (min-width: 992px) {
+
+  .main {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .main {
+    max-width: 1140px;
   }
 }
